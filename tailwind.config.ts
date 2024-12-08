@@ -6,15 +6,43 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-    },
-  },
-  plugins: [],
-};
+ "theme": {
+"extend": {
+"colors": {
+"white": "#fff",
+"dark-primary": "#2a254b",
+"gray": {
+"100": "#22202e",
+"200": "rgba(0, 0, 0, 0.1)",
+"300": "rgba(255, 255, 255, 0.15)"
+},
+"primary": "#4e4d93",
+"light-grey": "#f9f9f9",
+"slategray": {
+"100": "#726e8d",
+"200": "#505977"
+},
+"whitesmoke": "rgba(249, 249, 249, 0.15)"
+},
+"spacing": {},
+"fontFamily": {
+"body-medium": "Satoshi",
+"headings-h1": "'Clash Display'"
+}
+},
+"fontSize": {
+"base": "16px",
+"sm": "14px",
+"5xl": "24px",
+"17xl": "36px",
+"lg": "18px",
+"xl": "20px",
+"13xl": "32px",
+"inherit": "inherit"
+}
+},
+"corePlugins": {
+"preflight": false
+}
+}
 export default config;
