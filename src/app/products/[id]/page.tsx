@@ -1,10 +1,10 @@
-import ShopingBasket from '@/app/components/ShopingBasket'
+
 import React from 'react'
 
 const Cart = () => {
   return (
     <div>
-        <ShopingBasket/>
+        <h1></h1>
     </div>
   )
 }
