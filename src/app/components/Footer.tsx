@@ -1,101 +1,81 @@
-import type { NextPage } from 'next';
-import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
+const Footer = () => {
+  return (
+    <footer className="bg-dark-primary text-white py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          {/* Menu Section */}
+          <div>
+            <h3 className="font-headings-h1 text-xl mb-4">Menu</h3>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/new-arrivals" className="hover:text-primary">New arrivals</Link></li>
+              <li><Link href="/best-sellers" className="hover:text-primary">Best sellers</Link></li>
+              <li><Link href="/recently-viewed" className="hover:text-primary">Recently viewed</Link></li>
+              <li><Link href="/popular-this-week" className="hover:text-primary">Popular this week</Link></li>
+              <li><Link href="/all-products" className="hover:text-primary">All products</Link></li>
+            </ul>
+          </div>
 
+          {/* Categories Section */}
+          <div>
+            <h3 className="font-headings-h1 text-xl mb-4">Categories</h3>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/crockery" className="hover:text-primary">Crockery</Link></li>
+              <li><Link href="/furniture" className="hover:text-primary">Furniture</Link></li>
+              <li><Link href="/homeware" className="hover:text-primary">Homeware</Link></li>
+              <li><Link href="/plant-pots" className="hover:text-primary">Plant pots</Link></li>
+              <li><Link href="/chairs" className="hover:text-primary">Chairs</Link></li>
+            </ul>
+          </div>
 
-const Footer:NextPage = () => {
-  	return (
-    		<div className="w-full relative bg-dark-primary h-[380px] overflow-hidden shrink-0 text-left text-sm text-white font-body-medium mt-12">
-				<div className='relative left-[100px] hidden sm:flex lg:block'>
-      			<div className="absolute top-[58px] left-[82px] flex flex-col items-start justify-start gap-3">
-        				<div className="relative text-base font-clash-display">Menu</div>
-        				<div className="relative">New arrivals</div>
-        				<div className="relative">Best sellers</div>
-        				<div className="relative">Recently viewed</div>
-        				<div className="relative">Popular this week</div>
-        				<div className="relative">All products</div>
-      			</div>
-      			<div className="absolute top-[58px] left-[299px] flex flex-col items-start justify-start gap-3">
-        				<div className="relative text-base font-clash-display">Categories</div>
-        				<div className="relative">Crockery</div>
-        				<div className="relative">Furniture</div>
-        				<div className="relative">Homeware</div>
-        				<div className="relative">Plant pots</div>
-        				<div className="relative">Chairs</div>
-        				<div className="relative">Crockery</div>
-      			</div>
-      			<div className="absolute top-[336px] left-[80px]">Copyright 2022 Avion LTD</div>
-      			<div className="absolute top-[58px] left-[516px] flex flex-col items-start justify-start gap-3">
-        				<div className="relative text-base font-clash-display">Our company</div>
-        				<div className="relative">About us</div>
-        				<div className="relative">Vacancies</div>
-        				<div className="relative">Contact us</div>
-        				<div className="relative">Privacy</div>
-        				<div className="relative">Returns policy</div>
-      			</div>
-      			<div className="absolute top-[58px] left-[730px] text-base font-clash-display">Join our mailing list</div>
-      			<div className="absolute top-[311.5px] left-[79.5px] border-primary border-t-[1px] border-solid box-border w-[1278px] h-px" />
-      			<div className="absolute top-[334px] left-[1093px] flex flex-row items-start justify-start gap-6">
-        				<Image className="w-6 relative h-6 overflow-hidden shrink-0" width={24} height={24} alt="" src="Logo--linkedin.svg" />
-        				<Image className="w-6 relative h-6 overflow-hidden shrink-0" width={24} height={24} alt="" src="Logo--facebook.svg" />
-        				<Image className="w-6 relative h-6 overflow-hidden shrink-0" width={24} height={24} alt="" src="Logo--instagram.svg" />
-        				<Image className="w-6 relative h-6 overflow-hidden shrink-0" width={24} height={24} alt="" src="Logo--skype.svg" />
-        				<Image className="w-6 relative h-6 overflow-hidden shrink-0" width={24} height={24} alt="" src="Logo--twitter.svg" />
-        				<Image className="w-6 relative h-6 overflow-hidden shrink-0" width={24} height={24} alt="" src="Logo--pinterest.svg" />
-      			</div>
-      			<div className="absolute top-[94px] left-[730px] w-[627px] flex flex-row items-start justify-start text-base">
-        				<div className="self-stretch flex-1 relative bg-gray overflow-hidden">
-          					<div className="absolute top-[17px] left-[32px]">your@email.com</div>
-        				</div>
-        				<div className="bg-white overflow-hidden flex flex-row items-start justify-start py-4 px-8 text-dark-primary">
-          					<div className="relative leading-[150%]">Sign up</div>
-        				</div>
-      			</div>
-			  </div>
+          {/* Our Company Section */}
+          <div>
+            <h3 className="font-headings-h1 text-xl mb-4">Our Company</h3>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/about" className="hover:text-primary">About us</Link></li>
+              <li><Link href="/vacancies" className="hover:text-primary">Vacancies</Link></li>
+              <li><Link href="/contact" className="hover:text-primary">Contact us</Link></li>
+              <li><Link href="/privacy-policy" className="hover:text-primary">Privacy</Link></li>
+              <li><Link href="/returns-policy" className="hover:text-primary">Returns policy</Link></li>
+            </ul>
+          </div>
 
-			  {/* Mobile screen */}
+          {/* Join Our Mailing List Section */}
+          <div>
+            <h3 className="font-headings-h1 text-xl mb-4">Join our mailing list</h3>
+            <form className="flex flex-row">
+              <input
+                type="email"
+                placeholder="your@email.com"
+                className="flex-1 px-16 h-11 py-0 text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary"
+              />
+              <button
+                type="submit"
+                className=" px-16 max-h-12 py-0 bg-primary text-white hover:bg-darkslateblue"
+              >
+                Sign up
+              </button>
+            </form>
+          </div>
+        </div>
 
-			  <div className="w-full relative bg-dark-primary h-[668px] overflow-hidden shrink-0 text-left text-sm text-white font-body-medium lg:hidden md:hidden">
-               <div className="absolute top-[40px] left-[205px] flex flex-col items-start justify-start gap-3">
-               <div className="relative text-base font-clash-display">Menu</div>
-               <div className="relative">New arrivals</div>
-               <div className="relative">Best sellers</div>
-               <div className="relative">Recently viewed</div>
-               <div className="relative">Popular this week</div>
-               <div className="relative">All products</div>
-              </div>
-              <div className="absolute top-[40px] left-[25px] flex flex-col items-start justify-start gap-3">
-              <div className="relative text-base font-clash-display">Categories</div>
-              <div className="relative">Crockery</div>
-              <div className="relative">Furniture</div>
-              <div className="relative">Homeware</div>
-<div className="relative">Plant pots</div>
-<div className="relative">Chairs</div>
-<div className="relative">Crockery</div>
-</div>
-<div className="absolute top-[286px] left-[24px] flex flex-col items-start justify-start gap-3">
-<div className="relative text-base font-clash-display">Our company</div>
-<div className="relative">About us</div>
-<div className="relative">Vacancies</div>
-<div className="relative">Contact us</div>
-<div className="relative">Privacy</div>
-<div className="relative">Returns policy</div>
-</div>
-<div className="absolute top-[501px] left-[24px] flex flex-col items-start justify-start text-base font-clash-display">
-<div className="relative">Join our mailing list</div>
-</div>
-<div className="absolute top-[608.5px] left-[23.5px] border-primary border-t-[1px] border-solid box-border w-[343px] h-px" />
-<div className="absolute top-[629px] left-[113px]">Copyright 2022 Avion LTD</div>
-<div className="absolute top-[537px] left-[24px] w-[342px] flex flex-row items-start justify-start text-base">
-<div className="self-stretch flex-1 relative bg-gray overflow-hidden">
-<div className="absolute top-[17px] left-[32px]">your@email.com</div>
-</div>
-<div className="bg-white overflow-hidden flex flex-row items-start justify-start py-4 px-8 text-dark-primary">
-<div className="relative leading-[150%]">Sign up</div>
-</div>
-</div>
-</div>
-    		</div>);
+        {/* Footer Bottom Section */}
+        <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+          <p className="mb-4 md:mb-0">&copy; {new Date().getFullYear()} Axion LTD. All rights reserved.</p>
+          <div className="flex space-x-4">
+            <a href="#" className="hover:text-primary"><i className="fab fa-linkedin"></i></a>
+            <a href="#" className="hover:text-primary"><i className="fab fa-facebook"></i></a>
+            <a href="#" className="hover:text-primary"><i className="fab fa-instagram"></i></a>
+            <a href="#" className="hover:text-primary"><i className="fab fa-skype"></i></a>
+            <a href="#" className="hover:text-primary"><i className="fab fa-twitter"></i></a>
+            <a href="#" className="hover:text-primary"><i className="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

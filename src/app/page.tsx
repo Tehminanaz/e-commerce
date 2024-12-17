@@ -1,42 +1,25 @@
 
-import EmailSignUp from "./components/EmailSignUp";
-import Features from "./components/Features";
-import Features2 from "./components/Features2";
-import HeroBlocks from "./components/HeroBlocks";
-import Listings from "./components/Listings";
-import Listings2 from "./components/Listings2";
-import TopNav from "./components/TopNav";
-
+import HeroBlock from "./components/HeroBlock";
+import Features from "@/app/components/Features";
+import NewCeramics from "./components/NewCeramics";
+import PopularProducts from "./components/PopulerProducts";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import NewsletterSignup from "./components/NewsletterSignup";
+import BrandStory from "@/app/components/Brandstory";
 
 
 export default function Home() {
   return (
     <>
-    <TopNav/>
-    {/* Hero Blocks */}
-        <HeroBlocks/>
-
-    {/* Features */}
-        <Features/>
-
-    {/* Listings */}
-
-        <Listings/>
-
-    {/* Listings no 2 */}
-
-        <Listings2/>
-
-    {/* Email sing up  */}
-
-        <EmailSignUp/>
-
-        {/* Features */}
-
-        <Features2/>
-    
-       
-
+       <Header/>
+       <HeroBlock/>
+       <Features/>
+       <NewCeramics/>
+       <PopularProducts/>
+       <NewsletterSignup/>
+       <BrandStory/>
+       <Footer/>
     </>
   );
 }
