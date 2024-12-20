@@ -16,13 +16,13 @@ const HeroSection: FC<HeroSectionProps> = () => {
 
           <div className="flex justify-center lg:justify-start sm:flex-col-reverse ">
             <Link href="/products">
-              <button className="bg-primary  text-white font-body-medium px-6 py-3 mt-5 font-medium hover:bg-slategray-200 transition-all duration-300 ">
+              <button className="bg-slategray-200  text-white font-body-medium px-6 py-3 mt-5 font-medium hover:bg-violet-600 transition-all duration-300 ">
                 View collection
               </button>
             </Link>
           </div>
 
-          <p className="font-body-large text-slategray-200 pt-10 lg:pt-16 mt-10 lg:mt-16 text-center lg:text-left">
+          <p className="font-body-large text-slategray-100 pt-10 lg:pt-16 mt-10 lg:mt-16 text-center lg:text-left">
             A new era in eco-friendly furniture with Avelon, the French luxury
             retail brand with nice fonts, tasteful colors, and a beautiful way
             to display things digitally using modern web technologies.

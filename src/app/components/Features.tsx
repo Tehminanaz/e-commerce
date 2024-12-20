@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const Features:NextPage = () => {
   	return (
-      <section className='px-52 py-28 bg-light-grey w-full'>
-       <div className="w-full bg-white h-auto overflow-hidden shrink-0 text-base text-dark-primary lg:text-center lg:items-center font-headings-h5 py-16 px-20 max-w-[1350px] ">
+      <section className='w-full bg-white h-auto overflow-hidden shrink-0 text-base text-dark-primary lg:text-center lg:items-center font-headings-h5 py-12 px-12 lg:py-40 lg:px-44'>
+       <div className="w-full bg-white h-auto overflow-hidden shrink-0 text-base text-dark-primary lg:text-center lg:items-center font-headings-h5 max-w-[1350px] ">
           <div className="flex flex-col items-left lg:items-center lg:text-center ">
              <div className="text-5xl font-headings-h3 leading-[140%] w-auto mb-12">
                 What makes our brand different
@@ -17,11 +17,11 @@ const Features:NextPage = () => {
     {/* First Feature */}
     <div className=" items-start gap-4">
       <Image
-        className="w-6 h-6 overflow-hidden shrink-0"
+        className="w-6 h-6 overflow-hidden shrink-0 "
         width={24}
         height={24}
         alt=""
-        src="Delivery.svg"
+        src="/Delivery.png"
       />
       <div className=" flex-col gap-3">
         <div className="leading-[140%] ">Next day as standard</div>
@@ -38,7 +38,7 @@ const Features:NextPage = () => {
         width={24}
         height={24}
         alt=""
-        src="Checkmark--outline.svg"
+        src="/Checkmark--outline.png"
       />
       <div className="flex flex-col gap-3">
         <div className="leading-[140%]">Made by true artisans</div>
@@ -55,7 +55,7 @@ const Features:NextPage = () => {
         width={24}
         height={24}
         alt=""
-        src="Purchase.svg"
+        src="/Purchase.png"
       />
       <div className="flex flex-col gap-3">
         <div className="w-[196px] leading-[140%]">
@@ -74,7 +74,7 @@ const Features:NextPage = () => {
         width={24}
         height={24}
         alt=""
-        src="Sprout.svg"
+        src="/Sprout.png"
       />
       <div className="flex flex-col gap-3">
         <div className="w-[196px] leading-[140%]">

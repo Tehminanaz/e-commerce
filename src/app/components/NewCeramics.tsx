@@ -65,7 +65,7 @@ const NewCeramics = () => {
                 alt={product.name}
                 width={350}
                 height={380}
-                className="object-cover rounded-lg"
+                className="object-cover"
               />
               <div className="p-4 text-center">
                 <h3 className="font-body-medium text-lg mb-2 text-primary">
@@ -96,7 +96,7 @@ const NewCeramics = () => {
         {products.map((product) => (
           <div
             key={product.id}
-            className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105"
+            className="bg-white shadow-lg overflow-hidden transition-transform hover:scale-105"
           >
             <Link href={`/products/${product.slug}`}>
               <Image
@@ -104,7 +104,7 @@ const NewCeramics = () => {
                 alt={product.name}
                 width={350}
                 height={380}
-                className="object-cover rounded-t-lg no-underline"
+                className="object-cover no-underline"
               />
               <div className="p-4">
                 <h3 className="font-body-medium text-lg mb-2 text-primary">

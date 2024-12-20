@@ -9,30 +9,24 @@ const products = [
     id: 1,
     slug: "the-dandy-chair",
     name: "The Dandy Chair",
-    img: "/images/chair.png",
+    img: "/Large.png",
     price: "£250",
   },
   {
     id: 2,
     slug: "rustic-vase-set",
     name: "Rustic Vase Set",
-    img: "/images/vase-set.png",
+    img: "/photo1.png",
     price: "£155",
   },
   {
     id: 3,
     slug: "the-silky-vase",
     name: "The Silky Vase",
-    img: "/images/vase.png",
+    img: "/photo2.png",
     price: "£125",
   },
-  {
-    id: 4,
-    slug: "the-lucy-lamp",
-    name: "The Lucy Lamp",
-    img: "/images/lamp.png",
-    price: "£399",
-  },
+
 ];
 
 const PopularProducts = () => {
@@ -55,35 +49,30 @@ const PopularProducts = () => {
       <h2 className=" font-headings-h1 lg:text-17xl mb-12 text-start text-dark-primary ">
         Our Popular Products
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4 md:px-0">
-        {products.map((product) => (
+      <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr_1fr] gap-8 items-stretch px-4 md:px-0">
+        {products.map((product, index) => (
           <Link
-            key={product.id}
-            href={`/products/${product.slug}`}
-            passHref
-          >
-            <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col cursor-pointer hover:shadow-xl transition-shadow duration-300">
+            key={index}
+            href={`/products/${product.slug}`}>
+        
+            <div className="bg-white shadow-md overflow-hidden flex flex-col cursor-pointer hover:shadow-lg transition-shadow">
               <Image
                 src={product.img}
                 alt={product.name}
-                width={product.id === 0 ? 630 : 305}
+                width={index === 0 ? 630 : 305}
                 height={375}
                 className="object-cover w-full h-[375px]"
               />
               <div className="p-4 flex-1 flex flex-col justify-between">
-                <h3 className="font-medium text-lg text-dark-primary mb-2">
-                  {product.name}
-                </h3>
-                <p className="text-slategray-200 font-body-medium">
-                  {product.price}
-                </p>
+                <h3 className="font-medium text-lg mb-2">{product.name}</h3>
+                <p className="text-gray-700">{product.price}</p>
               </div>
             </div>
           </Link>
         ))}
       </div>
       <div className="text-center mt-8">
-        <Link href="./listing">
+        <Link href="/products">
           <button className="px-6 py-2 text-dark-primary  bg-gray-50 hover:bg-dark-primary hover:text-white transition-colors duration-300">
             View Collection
           </button>
