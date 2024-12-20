@@ -32,7 +32,7 @@ const HeroSection: FC<HeroSectionProps> = () => {
         {/* Image */}
         <div className="flex-shrink-0 sm:block">
           <Image
-            src="/Rightimage.png" // Replace with your Next.js image link
+            src="/photo.png" // Replace with your Next.js image link
             alt="Chair Image"
             width={500}
             height={600}

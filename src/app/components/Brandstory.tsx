@@ -22,7 +22,7 @@ const BrandStory: React.FC = () => {
           </p>
           <div className="py-4">
             <Link href="/about">
-              <button className="px-6 py-3 text-dark-primary bg-gray-100 rounded-lg hover:bg-primary hover:text-white transition-colors">
+              <button className="px-6 py-3 bg-dark-primary  text-white rounded-lg hover:bg-primary hover:text-white transition-colors">
                 Get in touch
               </button>
             </Link>
@@ -32,7 +32,7 @@ const BrandStory: React.FC = () => {
         {/* Image Content */}
         <div className="flex justify-center items-center">
           <Image
-            src="/images/brandstory.png"
+            src="/baner.png"
             alt="Stylish interior with sofa and decor"
             width={600}
             height={400}
