@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-dark-primary text-white py-12">
+    <footer className="bg-dark-primary text-white py-12 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2 lg:ml-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Menu Section */}
@@ -45,15 +45,15 @@ const Footer = () => {
           {/* Join Our Mailing List Section */}
           <div>
             <h3 className="font-headings-h1 text-xl mb-4">Join our mailing list</h3>
-            <form className="flex flex-row">
+            <form className="flex ">
               <input
                 type="email"
                 placeholder="your@email.com"
-                className="flex-1 px-16 h-11 py-0 text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary"
+                className="flex-1 px-4 py-2  lg:px-8 text-black  focus:outline-none"
               />
               <button
                 type="submit"
-                className=" px-16 max-h-12 py-0 bg-slategray-200 text-white hover:bg-darkslateblue"
+                className="px-12 max-h-12 py-0 bg-slategray-200 text-white hover:bg-darkslateblue"
               >
                 Sign up
               </button>

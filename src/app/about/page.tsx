@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Image from "next/image";
 import Link from 'next/link';
 import AboutNav from '../components/AboutNav';
-import AboutFooter from '../components/AboutFooter';
+import Footer from '../components/Footer';
 
 const About: NextPage = () => {
   return (
@@ -185,7 +185,7 @@ const About: NextPage = () => {
       </footer> */}
       </div>
 
-      <AboutFooter/>
+      <Footer/>
     </div>
   );
 };

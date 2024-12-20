@@ -9,10 +9,10 @@ import Footer from "../components/Footer";
 
 // Sample products data
 const products = [
-  { id: 1, slug: "the-dandy-chair", name: "The Dandy Chair", price: "£250", img: "/images/chair1.png" },
-  { id: 2, slug: "rustic-vase-set", name: "Rustic Vase Set", price: "£155", img: "/images/prd2.png" },
-  { id: 3, slug: "the-silky-vase", name: "The Silky Vase", price: "£125", img: "/images/prd3.png" },
-  { id: 4, slug: "the-lucy-lamp", name: "The Lucy Lamp", price: "£399", img: "/images/prd4.png" },
+  { id: 1, slug: "the-dandy-chair", name: "The Dandy Chair", price: "£250", img: "/photo.png" },
+  { id: 2, slug: "rustic-vase-set", name: "Rustic Vase Set", price: "£155", img: "/photo1.png" },
+  { id: 3, slug: "the-silky-vase", name: "The Silky Vase", price: "£125", img: "/photo2.png" },
+  { id: 4, slug: "the-lucy-lamp", name: "The Lucy Lamp", price: "£399", img: "/photo3.png" },
 ];
 
 const ProductsPage = () => {
@@ -34,7 +34,7 @@ const ProductsPage = () => {
           </div>
         ))}
       </section>
-      <div className="mt-16">
+      <div className="mt-20">
           <NewCeramics />
           <Features/>
           <NewsletterSignup />
